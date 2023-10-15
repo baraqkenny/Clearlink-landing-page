@@ -13,25 +13,34 @@
     --bg-color: #ffffff;
     --border-color: #D0D5DD;
     --blue-dark-400: #528BFF;
+    --blue-100: #D1E9FF;
     --gray-500: #667085;
     --gray-800: #1D2939;
     --blue-200: #B2DDFF;
     --blue-50: #EFF8FF;
     --gray-700:  #344054;
     --gray-600: #475467;
+    --gray-900: #101828;
+    --gray-50: #F9FAFB;
+    --gray-200: #EAECF0;
+    --gray-400: #98A2B3;
+    --blue-dark-700: #004EEB;
 }
 
 .container{
     width: 100vw;
-    height: 100vh;
-    background: var(--bg-color);
+    background: url(./images/Background\ pattern.png)center/cover;
 }
 
+.content{
+    padding: 1rem 1.5rem 0 1.5rem;
+}
+/* Navbar styling */
 .nav__links__wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 1rem 4rem;
+    flex-wrap: wrap;
     padding: 1rem 2rem;
     border: 1px solid var(--border-color);
     border-radius: 5.25rem;
@@ -54,7 +63,10 @@
     color:var(--blue-dark-400);
 }
 
+
+
 .nav__links__wrapper ul li{
+    
     list-style: none;
     display: inline-block;
     padding-right: 2.5rem;
@@ -75,6 +87,7 @@
 }
 
 .nav__button{
+    /* display: flex; */
     gap: 0.25rem;
 }
 
@@ -114,10 +127,14 @@
     cursor: pointer;
 }
 
+.bx-menu{
+    display: none;
+}
+
 /* First Page Styling */
 
 .first__page__wrapper{
-    margin: 8rem 3.5rem 0 3.5rem;
+    margin: 8rem 2rem 0 2rem;
 
 }
 
@@ -178,7 +195,7 @@
 
     /* First content page two styling */
 .first__page__content__two__wrapper{
-    width: 33rem;
+    width: 31rem;
     height: 29rem;
     margin-left: 2rem;
     border: 1px solid var(--blue-200);
@@ -190,39 +207,53 @@
 .first__page__content__two{
     display: flex;
     flex-wrap: wrap;
-    gap: 7px;
+    gap: .5rem;
     margin: 0.98rem;
+    
 }
 
 .first__image__avatar{
     background-color: orange;
     border-radius: 10px;
-    padding-left: 6px;
-}
+    padding-left: 1rem;
+    width: 9rem;
+    height:9rem;
+    }
 
 .second__image__avatar{
     background-color: rgb(214 187 251);
     border-radius: 10px;
+    width: 9rem;
+    height:9rem;
 }
 
 .third__image__avatar{
     background-color: rgb(172 220 121);
     border-radius: 10px;
+    width: 9rem;
+    height:9rem;
 }
 
 .fourth__image__avatar{
     background-color: rgb(179 184 219);
     border-radius: 10px;
+    width: 9rem;
+    height:9rem;
+    padding-left: 1rem;
 }
 
 .fifth__image__avatar{   
     background-color: rgb(254 200 75);
     border-radius: 10px;
+    width: 9rem;
+    height:9rem;
 }
 
 .sixth__image__avatar{
     background-color: rgb(254 163 180);
     border-radius: 10px;
+    width: 9rem;
+    height:9rem;
 }
 
 
@@ -336,4 +367,512 @@
     color: var(--gray-600);
     font-size: 1rem;
     font-weight: 500;
+}
+
+.first__page__content__four{
+    margin-top: 6rem;
+}
+
+.first__page__content__four p{
+    color: var(--gray-600);
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.first__page__content__four__image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3.22rem;
+    gap: 2rem;
+}
+
+/* Second Page Styling */
+
+.second__page__wrapper{
+    margin: 5rem 2rem 6rem 2rem;
+    
+}
+
+.second__page__content__one__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.second__page__first__content h4{
+    color: var(--primary-color);
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.second__page__first__content h1{
+    color: var(--gray-800);
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 0.75rem;
+}
+
+.second__page__first__content p{
+    color: var(--gray-500);
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 1.25rem;
+}
+
+.second__page__content__two{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.second__page__third__content{
+     display: flex;
+     justify-content:space-between;
+     flex-wrap: wrap;
+     margin: 0 1rem 0 0;
+}
+
+.second__page__third__content h3{
+    color: var(--gray-900);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.25rem;
+}
+
+.second__page__third__content p{
+    color: var(--gray-600);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem; 
+    margin-top: 0.5rem;
+}
+
+
+.second__page__third__content__four{
+    margin-left: .5rem;
+}
+
+.curly__arrow__icon{
+    position: relative;
+    top: 6.5rem;
+    right: 10.5rem;
+}
+
+
+.second__page__fourth__content{
+    margin-left: 1rem;
+}
+
+.image__rectangle{
+    width: 30rem;
+}
+
+.second__page__third__content__two{
+    margin-right: 2rem;
+}
+    /* second page icon styling */
+.video__recorder__icon{
+    border-radius: 6.25rem;
+    border: 1px solid var(--gray-200);
+    background: var(--gray-50);
+    padding: 1rem;
+}
+
+.recording__icon{
+    border-radius: 6.25rem;
+    border: 1px solid var(--gray-200);
+    background: var(--gray-50);
+    padding: 1rem;
+}
+
+.calendar__icon{
+    border-radius: 6.25rem;
+    border: 1px solid var(--gray-200);
+    background: var(--gray-50);
+    padding: 1rem;
+}
+
+.clock__icon{
+    border-radius: 6.25rem;
+    border: 1px solid var(--gray-200);
+    background: var(--gray-50);
+    padding: 1rem;
+}
+
+/* Third Page Content Styling */
+
+.third__page__content_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--gray-50);
+    /* gap: 4rem; */
+    /* margin: 0 ; */
+}
+
+.third__page__content__main{
+    margin: 6rem;
+    margin-left: 2rem;
+}
+
+.third__page__first__content{
+    /* margin: 6rem 0 0 2rem; */
+}
+
+.star-box{
+    margin-top: 3rem;
+}
+
+.third__page__first__main__content h1{
+    margin-top: 3rem;
+    color: var(--gray-900);
+    font-size: 2.75rem;
+    font-weight: 500;
+    line-height: 3.75rem;
+    letter-spacing: -0.055rem;
+}
+
+.avatar__icon__box{
+    margin-top: 3rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.project__manager__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project__manager__wrapper > h3{
+    color: var(--gray-900);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.875rem; 
+}
+
+.project__manager__wrapper > p{
+    color: var(--gray-600);
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+
+
+.bx-left-arrow-alt{
+    border-radius: 1.75rem;
+    border: 1px solid var(--blue-100);
+    background: rgba(255, 255, 255, 0.90);
+    font-size: 2rem;
+    backdrop-filter: blur(4px);
+}
+
+.bx-right-arrow-alt{
+    border-radius: 1.75rem;
+    border: 1px solid var(--blue-100);
+    margin-left: 1rem;
+    background: rgba(255, 255, 255, 0.90);
+    font-size: 2rem;
+    backdrop-filter: blur(4px);
+}
+
+
+.third__page__second__main__content{
+    /* display: flex; */
+    /* height: 28rem;
+    flex: 1 0 0; */
+    margin-right: 3rem;
+}
+
+.third__content__first__image{
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+.third__content__second__image{
+    padding-right: 1rem;
+
+}
+
+.third__page__third__image{
+    position: relative;
+    bottom: 7rem;
+}
+
+.third__page__fourth__image{
+    position: relative;
+    bottom: 7rem;
+}
+
+/* Fourth Page Styling */
+.fourth__page__Wrapper{
+    margin-top: 6.12rem;
+}
+
+.fourth__page___content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 2rem 0 2rem;
+}
+
+.fourth__page__first__content > h3{
+    color: var(--primary-color);
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.fourth__page__first__content > h1{
+    margin-top: 0.75rem;
+    color: var(--gray-800);
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.06rem
+}
+
+.fourth__page__first__content > p{
+    margin-top: 1.25rem;
+    color: var(--gray-500);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.fourth__page__first__content > p a{
+    color: var(--gray-500);
+}
+
+.first__faqs{
+    border-radius: 1rem;
+    border: 1px solid var(--gray-200);
+    background: var(--gray-50);
+    padding: 2rem;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.first__faqs__content > h3{ 
+    font-size: 1.25rem; 
+    font-weight: 600;
+    color: var(--gray-900);
+}
+
+.first__faqs__content > p{
+    margin-top: 0.5rem;
+    color: var(--gray-600);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+}
+
+.second__faq{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.third__faq{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    border-bottom: 1px solid var(--gray-200);
+}
+.fourth__faq{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    border-bottom: 1px solid var(--gray-200);
+}
+.second__faq{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    border-bottom: 1px solid var(--gray-200);
+}
+.fifth__faq{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    border-bottom: 1px solid var(--gray-200);
+}
+.sixth__faq{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.bx-minus-circle{
+    color: var(--gray-400);
+    font-size: 1.5rem;
+}
+.bx-plus-circle{
+    color: var(--gray-400);
+    font-size: 1.5rem;
+}
+
+/* Fifth Page Styling */
+
+.fifth__page__wrapper{
+    margin-top: 6rem;
+}
+
+.fifth__page__content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+}
+
+.fifth__page__first__content > h1{
+    color: var(--gray-900);
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 3.75rem;
+    letter-spacing: -0.06rem;
+}
+
+.bx-check-circle{
+    margin-left: .7rem;
+    margin-right: .75rem;
+    font-size: 1.75rem;
+    color: var(--primary-color);
+}
+
+.fifth__page__first__content > ul{
+    margin-top: 2rem;
+}
+
+.fifth__page__first__content > ul li{
+    list-style: none;
+    color: var(--gray-600,);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+}
+
+.fifth__page__btn{
+    margin-top: 2.5rem;
+}
+
+.fifth__page__image > img{
+    width: 38rem;
+    height: 30rem;
+    border-top-left-radius: 0.75rem;
+    border-top: 8px solid var(--gray-900);
+    border-left: 8px solid var(--gray-900);
+}
+
+/* Sixth Page Styling */
+
+.sixth__page__wrapper{
+    margin-top: 6rem;
+}
+
+.sixth__page__content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 2rem 0 2rem;
+}
+
+.footer__content__one__home__link{
+    display: flex;
+    align-items: center;
+    gap: 0.62rem;
+}
+
+.footer__paragraph{
+    margin-top: 2rem;
+    color: var(--gray-600);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem; 
+}
+
+.sixth__page__content p{
+    color: var(--gray-500);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.sixth__page__content  ul li{
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.sixth__page__content  ul li a{
+    text-decoration: none;
+    color: var(--gray-600, #475467);
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.footer__content__six{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__content__six h3{
+    color: var(--blue-dark-700);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.app__store__banner{
+    margin-top: 1rem;
+}
+
+.google__play__store__banner{
+    margin-top: 1rem;
+}
+
+.footer__content__seven__wrapper{
+    background-color: var(--gray-50);
+    padding-bottom: 3rem;
+}
+
+.footer__content__seven{
+    margin: 6rem 2rem 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__content__seven p{
+    margin-top: 3rem;
+    color: var(--gray-500, #667085);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer__content__seven__icon{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--gray-400);
+}
+
+
+@media (max-width: 1115px){
+    .nav__button{
+        display: none;
+    }
+
+    .nav__links__wrapper ul{
+        margin-right: 4rem;
+    }
+
+    .bx-menu{
+    display: block;
+    font-size: 2rem;
+    }
 }
